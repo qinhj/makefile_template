@@ -1,0 +1,5 @@
+HOST=~/toolchain/amba_s2l22m/host
+PATH=${HOST}/bin:$PATH
+export CROSS_TOOL=arm-linux-
+export SYSROOT=${HOST}/arm-buildroot-linux-gnueabihf/sysroot
+export STAGING=

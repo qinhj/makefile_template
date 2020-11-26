@@ -30,7 +30,11 @@ INCFLAG := $(inc) $(extinc)
 lib     := #-L./lib
 extlib  +=
 LIBPATH := $(lib) $(extlib)
+# -------------------------------------------------------------
 # Note: To link libdl.so, one need add -D _GNU_SOURCE to CFLAG.
+# To link static libraries, use “-Wl,-dn”, while use "-Wl,-dy"
+# to link shared libraries. Use "-static" for all.
+# -------------------------------------------------------------
 LIBLINK := #-ldl
 
 # ========================================================================================
